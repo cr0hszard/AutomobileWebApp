@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using WebApplication1.Controllers;
+
 
 namespace WebApplication1.Models
 {   //Here we give the car class properties
