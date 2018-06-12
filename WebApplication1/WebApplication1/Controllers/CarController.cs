@@ -7,22 +7,22 @@ using System.Web.Http;
 using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
-{
+{    //This class is used to Get the Cars[] array or a Cars[id] element of the array
     public class CarController : ApiController
-    {
+    {   
+       
         // GET: api/Car
-        public IEnumerable<string> Get()
+        public Car[] Get()
         {
-            return new string[] { "Car1", "Car2" };
+            return Car.GetCars() ;//returns Car.Cars Array
         }
 
         // GET: api/Car/5
-        public string Get(int id)
+        public Car Get(int id)
         {
-            Car Panda = new Car();
-            Panda.Brand = "FIAT";
-
-            return "Some car";
+            Car auto = new Car();
+            auto = Car.GetCars()[id-1];
+            return auto ; //returns Car.Cars[id] element of the array
         }
 
         // POST: api/Car
