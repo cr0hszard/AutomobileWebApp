@@ -9,8 +9,7 @@ using WebApplication1.Models;
 namespace WebApplication1.Controllers
 {    //This class is used to Get the Cars[] array or a Cars[id] element of the array
     public class CarController : ApiController
-    {   
-       
+    {  
         // GET: api/Car
         public Car[] Get()
         {

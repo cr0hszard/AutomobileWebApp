@@ -54,7 +54,7 @@ namespace WebApplication1.Models
             Car.Cars = Array;
         }
       
-        //This method is used to return a randomly generated array of cars 
+        //This method is used to return a randomly generated array of cars ------------------------------------------
         public static Car[] PopulateArray(int length)//length is the legth of the array to create
         {
             String[] NameArray = { "Alfa", "Peugeot", "Skoda", "BMW", "Audi", "Lamborghini", "Opel", "Seat", "Citroen", "Lada" };//Array of names
