@@ -8,18 +8,15 @@ namespace WebApplication1.Models
 {   //Here we give the car class properties
     public class Car
     {
-        private static Car[] Cars=PopulateArray(20); //static Array of cars
+        private static Car[] Cars = PopulateArray(20); //static Array of cars
 
         //The Counter is used to count the instances of objects and to set a different Id for every car in the constructor
         public static int Counter = 0;
-       
+
         //Car properties---------------------------------
-        public string Brand { get; set;}
+        public string Brand { get; set; }
         public int ProductionYear { get; set; }
         public int Id { get; set; }
-
-
-
 
         //Class constructors------------------------------
         public Car()
@@ -28,7 +25,7 @@ namespace WebApplication1.Models
 
             this.ProductionYear = 0;
 
-            this.Id = Car.Counter+1;
+            this.Id = Car.Counter + 1;
             Car.Counter++;
 
         }
@@ -39,13 +36,13 @@ namespace WebApplication1.Models
 
             this.ProductionYear = productionYear;
 
-            this.Id = Car.Counter+1;
+            this.Id = Car.Counter + 1;
             Car.Counter++;
         }
-       
+
         //Cars array getter and setter --------------------
         public static Car[] GetCars()
-        {   
+        {
             return Cars;
         }
 
@@ -53,7 +50,7 @@ namespace WebApplication1.Models
         {
             Car.Cars = Array;
         }
-      
+
         //This method is used to return a randomly generated array of cars ------------------------------------------
         public static Car[] PopulateArray(int length)//length is the legth of the array to create
         {
@@ -75,11 +72,7 @@ namespace WebApplication1.Models
                     lowestProductionYear + (int)(r2.NextDouble() * 18)
                     );
             }
-
             return Array;
         }
     }
-
-
-
 }
