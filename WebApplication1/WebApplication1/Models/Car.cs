@@ -3,9 +3,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
+/*Car Class:
+    *   Properties:
+    *       -Brand
+    *       -ProductionYear
+    *       -Id
+    *   Static variable:
+    *       -Counter (used to assign Id)
+    *   Static Array:
+    *       -Cars[]: has GetCars() and SetCars() methods
+    *   Costructors:
+    *       -Car()
+    *       -Car(String Brand, int ProductionYear)
+    *   Methods:
+    *       -PopulateArray(int length)
+    *       -GetCars()
+    *       -SetCars(Car[] array)
+    * 
+    */
 
 namespace WebApplication1.Models
-{   //Here we give the car class properties
+{  
     public class Car
     {
         private static Car[] Cars = PopulateArray(20); //static Array of cars
@@ -17,6 +35,17 @@ namespace WebApplication1.Models
         public string Brand { get; set; }
         public int ProductionYear { get; set; }
         public int Id { get; set; }
+
+        //Cars array getter and setter --------------------
+        public static Car[] GetCars()
+        {
+            return Cars;
+        }
+
+        public static void SetCars(Car[] Array)
+        {
+            Car.Cars = Array;
+        }
 
         //Class constructors------------------------------
         public Car()
@@ -41,19 +70,9 @@ namespace WebApplication1.Models
             this.Id = Car.Counter;
         }
 
-        //Cars array getter and setter --------------------
-        public static Car[] GetCars()
-        {
-            return Cars;
-        }
-
-        public static void SetCars(Car[] Array)
-        {
-            Car.Cars = Array;
-        }
-
+        
         //This method is used to return a randomly generated array of cars ------------------------------------------
-         private static Car[] PopulateArray(int length)//length is the legth of the array to create
+         public static Car[] PopulateArray(int length)//length is the legth of the array to create
         {
             String[] NameArray = { "Alfa", "Peugeot", "Skoda", "BMW", "Audi", "Lamborghini", "Opel", "Seat", "Citroen", "Lada" };//Array of names
 

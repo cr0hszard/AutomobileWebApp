@@ -37,6 +37,12 @@ namespace WebApplication1.Controllers
         // DELETE: api/Car/5
         public void Delete(int id)
         {
+            
+        }
+        //Method used to regenerate the Cars array(not used yet)
+        public void Regenerate()
+        {
+            Car.SetCars(Car.PopulateArray(Car.GetCars().Length));
         }
     }
 }
