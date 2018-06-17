@@ -1,5 +1,5 @@
 ﻿body {
-    padding-top: 50px;
+    padding-top: 15px;
     padding-bottom: 20px;
 }
 
@@ -9,3 +9,33 @@ select,
 textarea {
     max-width: 280px;
 }
+.dataTable{
+    width:600px;
+    border-color: rgb(76, 99, 121);
+    border-style: solid;
+    border-radius: 10px;
+}
+    .dataTable table{
+        width:100%;
+        margin:0px;
+        padding:0px;
+        border:0px;
+        border-style: none;
+        border-radius: 9px;
+        overflow: hidden;
+    }
+    .evenRow {
+    color: rgb(187, 1, 1);
+    background-color:rgb(219, 179, 179);}
+
+    .oddRow {
+        color: rgb(12, 86, 155);
+        background-color:rgb(179, 206, 231);}
+
+    .dataColumn {
+    width: 33.3%;
+    text-align: center;
+    border-style: solid;
+    border: rgb(12, 86, 155);}
+
+
