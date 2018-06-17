@@ -1,4 +1,6 @@
-﻿var app = angular.module("CarApp", []);
+//Angular Script that will get the data from the API model Car.cs in ~/WebApplicatio1/Models/Car.cs
+
+var app = angular.module("CarApp", []);
 
 app.controller("CarCtrl", function ($scope, $http) {
     //URL of the CarControler
