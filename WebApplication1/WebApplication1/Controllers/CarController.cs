@@ -5,9 +5,12 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using WebApplication1.Models;
+using System.Web.Http.Cors;
 
 namespace WebApplication1.Controllers
 {    //This class is used to Get the Cars[] array or a Cars[id] element of the array
+        [EnableCors(origins: "http://localhost:53493", headers: "*", methods: "*")]
+
     public class CarController : ApiController
     {
         // GET: api/Car
