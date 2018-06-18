@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarApplication", "..\..\..\..\..\source\repos\WebApplication4\WebApplication4\CarApplication.csproj", "{DBDCBD1A-B01C-4F08-853A-BEC7468EF05E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarApplication", "WebApplication4\CarApplication.csproj", "{DBDCBD1A-B01C-4F08-853A-BEC7468EF05E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
